@@ -31,6 +31,7 @@ def replace_data():
     • De‑select existing files to delete them
     """
     folder = REPORTS_ROOT
+    os.makedirs(REPORTS_ROOT, exist_ok=True)
     tabs = VIEW_OPTIONS
 
     st.markdown("### Select tab(s) you want to modify")
